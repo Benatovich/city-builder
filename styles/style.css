@@ -95,18 +95,29 @@ header img {
 }
 
 .skyline {
-    height: 500px;
+    height: 100px;
     background-color: salmon;
+}
+
+.skyline img {
+    height: 100px;
 }
 
 .waterfront {
-    height: 500px;
+    height: 100px;
     background-color: salmon;
+}
+.waterfront img {
+    height: 100px;
 }
 
 .castle {
-    height: 500px;
+    height: 100px;
     background-color: salmon;
+
+}
+.castle img {
+    height: 100px;
 }
 
 p {
