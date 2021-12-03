@@ -84,40 +84,40 @@ header img {
 #skyline-dropdown {
     margin: 50px;
     margin-left: 5px;
+    margin-bottom: 15px;
 }
 #waterfront-dropdown {
     margin: 50px;
     margin-left: 5px;
+    margin-bottom: 15px;
 }
 #castle-dropdown {
     margin: 50px;
     margin-left: 5px;
+    margin-bottom: 15px;
 }
 
 .skyline {
-    height: 100px;
-    background-color: salmon;
+    height: 300px;
 }
 
 .skyline img {
-    height: 100px;
+    height: 300px;
 }
 
 .waterfront {
-    height: 100px;
-    background-color: salmon;
+    height: 300px;
 }
 .waterfront img {
-    height: 100px;
+    height: 300px;
 }
 
 .castle {
-    height: 100px;
-    background-color: salmon;
+    height: 300px;
 
 }
 .castle img {
-    height: 100px;
+    height: 300px;
 }
 
 p {
