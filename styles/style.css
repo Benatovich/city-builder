@@ -75,6 +75,51 @@ header img {
     height: var(--header-height);
 }
 
+.picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#skyline-dropdown {
+    margin: 50px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+#waterfront-dropdown {
+    margin: 50px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+#castle-dropdown {
+    margin: 50px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.skyline {
+    height: 300px;
+}
+
+.skyline img {
+    height: 300px;
+}
+
+.waterfront {
+    height: 300px;
+}
+.waterfront img {
+    height: 300px;
+}
+
+.castle {
+    height: 300px;
+
+}
+.castle img {
+    height: 300px;
+}
+
 p {
     margin: var(--gutter);
 }
