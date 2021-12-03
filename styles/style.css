@@ -75,6 +75,40 @@ header img {
     height: var(--header-height);
 }
 
+.picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#skyline-dropdown {
+    margin: 50px;
+    margin-left: 5px;
+}
+#waterfront-dropdown {
+    margin: 50px;
+    margin-left: 5px;
+}
+#castle-dropdown {
+    margin: 50px;
+    margin-left: 5px;
+}
+
+.skyline {
+    height: 500px;
+    background-color: salmon;
+}
+
+.waterfront {
+    height: 500px;
+    background-color: salmon;
+}
+
+.castle {
+    height: 500px;
+    background-color: salmon;
+}
+
 p {
     margin: var(--gutter);
 }
