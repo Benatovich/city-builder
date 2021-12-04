@@ -5,16 +5,13 @@ import {
 
 const test = QUnit.test;
 
-let skylineCount = 0;
-let waterfrontCount = 0;
-let castleCount = 0;
 
 test('createCountString should return the current count for each part of the city', (expect) => {
-    const expected = `You've changed the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times, and the castle ${castleCount} times.`;
+    const expected = `You've changed the skyline 1 times, the waterfront 2 times, and the castle 3 times.`;
     
-    const actual = createCountString(skylineCount, waterfrontCount, castleCount);
+    const actual = createCountString(1, 2, 3);
     
-    expect.equal(actual, expected, `should return 'You've changed the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times, and the castle ${castleCount} times.'`);
+    expect.equal(actual, expected, `should return 'You've changed the skyline 1 times, the waterfront 2 times, and the castle 3 times.'`);
 });
 
 
