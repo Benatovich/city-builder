@@ -37,7 +37,8 @@ waterfrontDropdown.addEventListener('change', () => {
     waterfrontImageEl.src = `./assets/${id}-waterfront.jpg`;
     waterfrontCount++;
     countEl.textContent = ``;
-    displayStats();});
+    displayStats();
+});
 
 castleDropdown.addEventListener('change', () => {
     const id = castleDropdown.value;
@@ -50,19 +51,10 @@ castleDropdown.addEventListener('change', () => {
 sloganButton.addEventListener('click', () => {
     const newSlogan = sloganInputEl.value;
     sloganArray.push(newSlogan);
-    sloganListEl.textContent = '';
-    for (let slogan of sloganArray) {
-        const p = document.createElement('p');
-
-        p.classList.add('slogan');
-
-        p.textContent = slogan;
-
-        sloganListEl.append(p);
-    }
-
+    displaySlogans();
     sloganInputEl.value = '';
-});
+}
+);
 
 // FUNCTIONS
 function createCountString(skylineCount, waterfrontCount, castleCount) {
@@ -73,4 +65,14 @@ function displayStats() {
   // change the text content of the countEl
     const statsString = createCountString(skylineCount, waterfrontCount, castleCount);
     countEl.textContent = `${statsString}`;
+}
+
+function displaySlogans() {
+    sloganListEl.textContent = '';
+    for (let slogan of sloganArray) {
+        const p = document.createElement('p');
+        p.classList.add('slogan');
+        p.textContent = slogan;
+        sloganListEl.append(p);
+    }
 }

@@ -14,7 +14,7 @@ test('createCountString should return the current count for each part of the cit
     
     const actual = createCountString(skylineCount, waterfrontCount, castleCount);
     
-    expect.equal(actual, expected, `should return 'You\'ve changed the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times, and the castle ${castleCount} times.'`);
+    expect.equal(actual, expected, `should return 'You've changed the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times, and the castle ${castleCount} times.'`);
 });
 
 
