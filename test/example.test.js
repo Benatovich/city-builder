@@ -1,7 +1,24 @@
 // IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import {
+    createCountString,
+} from '../functions.js';
 
 const test = QUnit.test;
+
+let skylineCount = 0;
+let waterfrontCount = 0;
+let castleCount = 0;
+
+test('createCountString should return the current count for each part of the city', (expect) => {
+    const expected = `You've changed the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times, and the castle ${castleCount} times.`;
+    
+    const actual = createCountString(skylineCount, waterfrontCount, castleCount);
+    
+    expect.equal(actual, expected, `should return 'You\'ve changed the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times, and the castle ${castleCount} times.'`);
+});
+
+
+
 
 test('time to test a function', (expect) => {
     //Arrange

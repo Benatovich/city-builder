@@ -28,21 +28,23 @@ skylineDropdown.addEventListener('change', () => {
     skylineImageEl.src = `./assets/${id}-skyline.jpg`;
     skylineCount++;
   // update DOM to reflect the new state
-    countEl.textContent = `You have changed the skyline ${skylineCount} times.`;
+    countEl.textContent = ``;
+    displayStats();
 });
 
 waterfrontDropdown.addEventListener('change', () => {
     const id = waterfrontDropdown.value;
     waterfrontImageEl.src = `./assets/${id}-waterfront.jpg`;
     waterfrontCount++;
-    countEl.textContent = `You have changed the waterfront ${waterfrontCount} times.`;
-});
+    countEl.textContent = ``;
+    displayStats();});
 
 castleDropdown.addEventListener('change', () => {
     const id = castleDropdown.value;
     castleImageEl.src = `./assets/${id}-castle.jpg`;
     castleCount++;
-    countEl.textContent = `You have changed the castle ${castleCount} times.`;
+    countEl.textContent = ``;
+    displayStats();
 });
 
 sloganButton.addEventListener('click', () => {
@@ -61,3 +63,14 @@ sloganButton.addEventListener('click', () => {
 
     sloganInputEl.value = '';
 });
+
+// FUNCTIONS
+function createCountString(skylineCount, waterfrontCount, castleCount) {
+    return `You've changed the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times, and the castle ${castleCount} times.`;
+}
+
+function displayStats() {
+  // change the text content of the countEl
+    const statsString = createCountString(skylineCount, waterfrontCount, castleCount);
+    countEl.textContent = `${statsString}`;
+}
