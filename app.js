@@ -44,3 +44,20 @@ castleDropdown.addEventListener('change', () => {
     castleCount++;
     countEl.textContent = `You have changed the castle ${castleCount} times.`;
 });
+
+sloganButton.addEventListener('click', () => {
+    const newSlogan = sloganInputEl.value;
+    sloganArray.push(newSlogan);
+    sloganListEl.textContent = '';
+    for (let slogan of sloganArray) {
+        const p = document.createElement('p');
+
+        p.classList.add('slogan');
+
+        p.textContent = slogan;
+
+        sloganListEl.append(p);
+    }
+
+    sloganInputEl.value = '';
+});
